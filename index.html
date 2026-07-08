@@ -73,7 +73,8 @@
           .map((item) => {
             const [name, price, emoji] = item;
             // ↓ ここを書き換える（課題）
-            return '';
+            item.map()
+            return '<li>${emoji} ${name}：${price}円</li>';
           })
           .join('');
         return elements;
